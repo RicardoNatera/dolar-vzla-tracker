@@ -1,12 +1,6 @@
-export interface DolarData {
-  bcv: { value: number; date: string }
-  paralelo: { value: number; date: string }
-  
-}
+import type { DolarItem } from '@/lib/api'
 
-export interface TiendaCalc {
-  precioDolares: number
-  precioBolivares: number
-  bcv: number
-  paralelo: number
+export interface MainRates {
+  bcv: DolarItem | null
+  paralelo: DolarItem | null
 }
